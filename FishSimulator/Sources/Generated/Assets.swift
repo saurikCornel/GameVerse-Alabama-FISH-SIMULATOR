@@ -16,7 +16,7 @@ enum Assets {
         }()
         
         static func getCurrent() -> Image {
-            Image(BackgroundStorage.shared.selectedBackground).resizable()
+            Image(BStorage.shared.selectedBackground).resizable()
         }
     }
     enum Fishermans {
@@ -36,7 +36,7 @@ enum Assets {
             Image("fisherman_warrior").resizable()
         }()
         static func getCurrent() -> Image {
-            Image(FishermanStorage.shared.selectedFisherman).resizable()
+            Image(CurrentStorage.shared.selectedSkin).resizable()
         }
     }
     enum Fishes {

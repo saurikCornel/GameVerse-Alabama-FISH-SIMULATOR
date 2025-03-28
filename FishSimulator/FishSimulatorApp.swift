@@ -13,7 +13,7 @@ struct FishSimulatorApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Loading()
+            LoadScreen()
         }
     }
 }
@@ -21,7 +21,7 @@ struct FishSimulatorApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        if FishermanStorage.shared.isGreetingShowing {
+        if CurrentStorage.shared.isGreetingShowing {
             return .allButUpsideDown
         } else {
             return .landscape
